@@ -23,7 +23,7 @@ CDN links are used so manual installation is not needed.
 ## Motivation  thinking :v:
 VueJs2-LearningSeries exists for better understanding of Vue Js for the learners and for the developers who wants to clear their basics before starting or while starting VueJs 2.
 
-## Upcoming features
+## Upcoming features :partly_sunny:
 
 <ul>
   <li> Looping with v-for </li>
