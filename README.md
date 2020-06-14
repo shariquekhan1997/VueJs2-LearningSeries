@@ -33,5 +33,5 @@ VueJs2-LearningSeries exists for better understanding of Vue Js for the learners
 </ul>
 
 ## Author :writing_hand:
-Sharique Khan @shariquekhan1997
+Sharique Khan <a href="https://twitter.com/Sharique_khan_" target="_blank">@shariquekhan1997</a>
 
