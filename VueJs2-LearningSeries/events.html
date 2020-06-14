@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta author="Sharique" content="This page contains events in VueJs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in VueJs</title>
+    <style>
+        #canvas {
+            width: 600px;
+            padding: 200px 20px;
+            text-align: center;
+            border: 1px solid #333333;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- In this topic we will learn about Events in Vue.js -->
+    <div id="mouseEvents">
+        <h1>Mouse Events</h1>
+        <!-- v-on: directive will let you use the DOM events like onclick, onmousemove, etc -->
+        <!-- OnClick -->
+        <button v-on:click.once="add(1)">Add a Year</button>
+        <button v-on:click="subtract(1)">Subtract a Year</button>
+        <!-- On Double Click -->
+        <button v-on:dblclick="add(10)">Add 10 Years</button>
+        <button v-on:dblclick="subtract(10)">Subtract 10 Years</button>
+        <p>My age is {{age}}</p>
+
+        <!-- onMouse Events -->
+        <!-- On Mouse Move Instead of v-on: inshort we can use @ -->
+        <div id="canvas" @mousemove="UpdateXY">
+            <!-- Mouse Position are fetch and shown in x and y variable -->
+            {{x}}, {{y}}
+        </div>
+        <!-- prevent modifier will prevent the link to go to its target -->
+        <a v-on:click.prevent="click" href="https://www.twitter.com/Sharique_khan_" target="_blank">
+            twitter</a>
+    </div>
+
+    <div id="keyBoard">
+        <!-- KeyBoard Events -->
+        <h1>KeyBoard Events</h1>
+
+        <label>Name:</label>
+        <!-- .up , .down, .esc, .enter, .space -->
+        <input type="text" name="Name" v-on:keyup.enter="logName" autofocus />
+        <label>Age:</label>
+        <input type="text" name="Age" v-on:keyup.alt.enter="logAge" />
+
+        <div>
+            <!-- 2 Way Data Binding in v-model the variable will be updated in vueInstance and 
+        Output will be shown in below span
+        -->
+            <label>Country</label>
+            <input type="text" name="Country" v-model="country" />
+            <span>{{country}}</span>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">
+    </script>
+    <script>
+        var vm = new Vue({
+            el: '#mouseEvents',
+            data: {
+                age: 23,
+                x: 0,
+                y: 0
+            },
+            methods: {
+                //Mouse Events
+                add: function (inc) {
+                    this.age += inc;
+                },
+                subtract: function (dec) {
+                    this.age -= dec;
+                },
+                UpdateXY: function (event) {
+                    this.x = event.offsetX;
+                    this.y = event.offsetY;
+                },
+                click: function () {
+                    alert("You clicked on twitter");
+                }
+            }
+        });
+
+        var keyBoard = new Vue({
+            el: '#keyBoard',
+            data: {
+                name: '',
+                age: '',
+                country: ''
+            },
+            methods: {
+                // Keyboard events
+                logName: function () {
+                    console.log("You entered your name");
+                },
+                logAge: function () {
+                    console.log("You entered your Age");
+                },
+                logCountry: function () {
+                    this.country = '';
+                }
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>
