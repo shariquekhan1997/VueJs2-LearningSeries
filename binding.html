@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta author="Sharique" content="Vue js learning series" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue - Learning Series</title>
+    <style>
+        body{font-family: sans-serif;}span {text-decoration: underline;}
+        #data-id {color: darkcyan;}#change-id {color: red;}
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Getting Started</h1>
+    <p>Adding cdn link for easy usage</p>
+    <code>In script tag add source - src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"</code>
+    -->
+
+    <div id="myapp">
+        <!-- Moustache syntax - to bind text in html element -->
+        <h1>Hi, my name is <span>{{name}}</span> and I am <span>{{age}}</span> years old.</h1>
+        <p>The underlined text are dynamic and taken from Vue Insance data property.</p>
+
+        <h1>{{greet('afternoon')}}</h1>
+        <!-- v-html can bind html -->
+        <p v-html="brandName"></p>
+
+        <!-- Different way to bind text. v-text is a directive for binding the text -->
+        <div v-text="appName" title="appName - with v-text directive">
+            It replace this text with v-text.</div>
+        <div>
+            <h1 v-once title="Website Name won't change">{{website}}</h1>
+            <h1 title="Website Name will change">{{website}}</h1>
+            <h1 v-text="website" title="Website Name will change"></h1>
+        </div>
+    </div>
+
+    <!-- Binding Attributes -->
+    <div id="bind-attribute">
+        <p v-bind:id="myId">An id is bind for this paragraph.</p>
+        <button v-bind:disabled="isDisabled">Bind</button>
+    </div>
+
+    <!-- Binding Inline Styles with Object and Array Syntax -->
+    <div id="style">
+        <!-- But as the styles increases in will look dirty so use style object -->
+        <h1 v-bind:style="{color: highLightColor, fontSize: headerSize + 'px', margin:'0px' }">
+            Inline Style</h1>
+            <!-- Object -->
+        <h1 v-bind:style="headerStyleObject">Style Object Syntax</h1>
+
+        <div v-bind:style="[baseStyleObject, successStyleObject]">
+            Success Style - array syntax
+        </div>
+        <div v-bind:style="[baseStyleObject, dangerStyleObject]">
+            Danger Style - array syntax
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Vue js should be always on top of youe scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="scripts/main.js" type="text/javascript"></script>
+
+</body>
+
+</html>
