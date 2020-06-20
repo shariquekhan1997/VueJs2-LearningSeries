@@ -14,6 +14,7 @@ Vue JS 2 Learning Series for the newbies in VueJs 2.
 <li> Event Modifiers : @click.once, @click.prevent </li>
 <li> KeyBoard Events and Modifiers: v-on:keyup, .enter, .alt.enter </li>
 <li> 2-Way Data Binding - v-model </li>
+<li> Dynamic Classes</li>
 </ul>
 
 ## Get Started :thinking:
