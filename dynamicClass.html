@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Classes</title>
+    <style>
+        p {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            display: grid;
+            place-items: center;
+        }
+
+        .class {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Dynamically Adding of classes by using v-bind:class={className: boolean} mehtod.
+     Check dev tools for class there or not. Can add multiple classes
+        {className:bool, className: bool} -->
+    <div id="myapp">
+        <!-- By using on click mehtod we are toggling between available class -->
+        <p v-on:click="available = !available" v-bind:class="{class: available}">Class</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        //Created a vue instance
+        var vm = new Vue({
+            el: "#myapp",
+            data: {
+                available: true
+            }
+        });
+    </script>
+</body>
+
+</html>
