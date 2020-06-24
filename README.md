@@ -21,7 +21,8 @@ You can Download the code and run in your browser to see the code in action.
 CDN links are used so manual installation is not needed.
 
 ## Motivation  thinking :v:
-VueJs2-LearningSeries exists for better understanding of Vue Js for the learners and for the developers who wants to clear their basics before starting or while starting VueJs 2.
+VueJs2-LearningSeries exists for better understanding of Vue Js for the learners and for the developers who wants to clear their basics
+before starting or while starting VueJs 2.
 
 ## Upcoming features :partly_sunny:
 
@@ -34,4 +35,6 @@ VueJs2-LearningSeries exists for better understanding of Vue Js for the learners
 
 ## Author :writing_hand:
 Sharique Khan <a href="https://twitter.com/Sharique_khan_" target="_blank">@ShariqueKhan</a>
+
+<a href="https://github.com/shariquekhan1997/VueJs2-LearningSeries/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/shariquekhan1997/VueJs2-LearningSeries"></a>
 
