@@ -4,16 +4,15 @@ Vue JS 2 Learning Series for the newbies in VueJs 2.
 ## Chapters Covered :white_check_mark:
 
 <ul>
-<li> Getting Started : Installation through cdn </li>
-<li> Vue Instance : create vue instance </li>
-<li> Data and HTML Binding : v-text, v-html, {{MoustacheSyntax}} </li>
-<li> One Time Binding : v-once </li>
-<li> Binding of Attributes : v-bind:id, disabled </li>
-<li> Sytle Binding - Object and Array Syntax: v-bind:style </li>
-<li> Methods, Mouse Events : @click, v-on:dblclick, @mousemove </li>
-<li> Event Modifiers : @click.once, @click.prevent </li>
-<li> KeyBoard Events and Modifiers: v-on:keyup, .enter, .alt.enter </li>
-<li> 2-Way Data Binding - v-model </li>
+<li> Getting Started</li>
+<li> Vue Instance</li>
+<li> Data and HTML Binding</li>
+<li> One Time Binding</li>
+<li> Binding of Attributes</li>
+<li> Sytle Binding</li>
+<li> Methods, Mouse Events, Modifiers</li>
+<li> KeyBoard Events and Modifiers</li>
+<li> 2-Way Data Binding</li>
 <li> Dynamic Classes</li>
 </ul>
 
