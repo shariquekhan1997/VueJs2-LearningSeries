@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta author="Sharique" content="This page contains v-for directive in VueJs2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop Directive</title>
+    <style>
+        body{
+            background-color:bisque;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li{
+            padding: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+   
+    <div id="myapp">
+        <h1>Looping through Lists</h1>
+         <!-- It will loop through our array and gives the ouput in each li tag -->
+        <ul>
+            <li v-for="character in characters">{{character}}</li>
+        </ul>
+        <ul>
+            <li v-for="ninja in ninjas">{{ninja}}</li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">
+    </script>
+    <script>
+        var vm = new Vue({
+            el: "#myapp",
+            data: {
+                //array of strings
+                characters: ['Mario', 'Luigi', 'Yoshi', 'Browser'],
+                //array of objects
+                ninjas: [
+                    { name: 'Ryu', age: 25 },
+                    { name: 'Yoshi', age: 35 },
+                    { name: 'Ken', age: 55 }
+                ]
+            },
+            methods: {
+
+            },
+            computed: {
+
+            }
+
+        });
+    </script>
+</body>
+
+</html>
