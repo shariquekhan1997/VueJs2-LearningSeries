@@ -41,6 +41,15 @@
             <h3>{{index}} - {{ninja.name}}</h3>
             <p>{{ninja.age}}</p>
         </template>
+
+ <!-- What if we don't know how many properties are there in the object element.
+We can find the key value pairs of properties from below example of 3 for loops-->
+        <template v-for="ninja in ninjas">
+            <div v-for="(val,key) in ninja">
+                <p>{{key}} - {{val}}</p>
+            </div>
+        </template>
+       
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">
     </script>
