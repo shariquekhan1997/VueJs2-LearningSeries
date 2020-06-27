@@ -14,6 +14,7 @@ Vue JS 2 Learning Series for the newbies in VueJs 2.
 <li> KeyBoard Events and Modifiers</li>
 <li> 2-Way Data Binding</li>
 <li> Dynamic Classes</li>
+<li> Looping with v-for </li>
 </ul>
 
 ## Get Started :thinking:
@@ -27,7 +28,6 @@ before starting or while starting VueJs 2.
 ## Upcoming features :partly_sunny:
 
 <ul>
-  <li> Looping with v-for </li>
   <li> Intro to Components </li>
   <li> Refs </li>
   <li> Nesting Components </li>
