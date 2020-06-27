@@ -13,8 +13,8 @@ Vue JS 2 Learning Series for the newbies in VueJs 2.
 <li> Methods, Mouse Events, Modifiers</li>
 <li> KeyBoard Events and Modifiers</li>
 <li> 2-Way Data Binding</li>
-<li> Dynamic Classes</li>
-<li> Looping with v-for </li>
+<li> Dynamic Classes (New)</li>
+<li> Looping with v-for (New)</li>
 </ul>
 
 ## Get Started :thinking:
@@ -25,7 +25,7 @@ CDN links are used so manual installation is not needed.
 VueJs2-LearningSeries exists for better understanding of Vue Js for the learners and for the developers who wants to clear their basics
 before starting or while starting VueJs 2.
 
-## Upcoming features :partly_sunny:
+## Upcoming Lessons :partly_sunny:
 
 <ul>
   <li> Intro to Components </li>
