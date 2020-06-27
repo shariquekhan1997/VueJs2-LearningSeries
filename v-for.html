@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For Loop Directive</title>
     <style>
-        body{
-            background-color:bisque;
+        body {
+            background-color: bisque;
         }
-        ul{
+
+        ul {
             list-style: none;
         }
-        ul li{
+
+        ul li {
             padding: 10px;
             display: inline-block;
         }
@@ -21,16 +23,24 @@
 </head>
 
 <body>
-   
+
     <div id="myapp">
         <h1>Looping through Lists</h1>
-         <!-- It will loop through our array and gives the ouput in each li tag -->
+        <!-- It will loop through our array and gives the ouput in each li tag -->
         <ul>
             <li v-for="character in characters">{{character}}</li>
         </ul>
+        <!-- Array of Objects,We can show the index too from below example -->
         <ul>
-            <li v-for="ninja in ninjas">{{ninja}}</li>
+            <li v-for="(ninja, index) in ninjas">{{index}}. {{ninja.name}} - {{ninja.age}}</li>
         </ul>
+        <!-- Now will give an output with h3 and p tags looping. Here we will use template tag.
+        This tag won't be taken under consideration from browser like other tags. If you replace 
+    template with div tag you can see the changes between these two tags in Dev Tools -->
+        <template v-for="(ninja, index) in ninjas">
+            <h3>{{index}} - {{ninja.name}}</h3>
+            <p>{{ninja.age}}</p>
+        </template>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">
     </script>
